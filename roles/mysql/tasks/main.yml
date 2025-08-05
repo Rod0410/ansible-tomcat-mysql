@@ -1,0 +1,13 @@
+---
+- name: Instalar MySQL Server
+  apt:
+    name: mysql-server
+    state: present
+    update_cache: yes
+
+- name: Asegurar contraseña root
+  mysql_user:
+    name: root
+    host: localhost
+    password: "{{ mysql_password }}"
+    login_unix_socket: /run/mysqld/mysqld.sock

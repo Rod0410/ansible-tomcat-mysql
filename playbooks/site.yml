@@ -1,0 +1,7 @@
+- name: Configurar appservers con JDK, Tomcat y MySQL
+  hosts: localhost
+  become: yes
+  roles:
+    - jdk
+    - tomcat
+    - mysql

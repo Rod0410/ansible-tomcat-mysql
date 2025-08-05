@@ -1,0 +1,13 @@
+packages_common:
+  - curl
+  - unzip
+  - vim
+
+java_package: openjdk-11-jdk
+
+tomcat_user: "tomcat"
+tomcat_group: "tomcat"
+tomcat_install_dir: "/opt/tomcat"
+
+mysql_user: "root"
+mysql_password: "root123"
